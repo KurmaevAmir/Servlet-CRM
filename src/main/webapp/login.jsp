@@ -12,18 +12,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Авторизация</title>
+    <link rel="stylesheet" href="<c:url value="/css/login.css"/>" type="text/css"/>
 </head>
 <body>
-<h2>Вход в систему</h2>
-<c:if test="${not empty error}">
-    <p>${error}</p>
-</c:if>
-<form action="login" method="post">
-    <label for="username">Логин:</label>
-    <input type="email" id="username" name="username" required><br><br>
-    <label for="password">Пароль:</label>
-    <input type="password" id="password" name="password" required><br><br>
-    <input type="submit" value="Войти">
-</form>
+<div class="login-page">
+    <h1>Вход в систему</h1>
+    <div class="login-card">
+        <c:if test="${not empty error}">
+            <p>${error}</p>
+        </c:if>
+        <div class="form-login">
+            <form action="login" method="post">
+                <label for="username">Логин:</label>
+                <input type="email" id="username" name="username" required><br><br>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>

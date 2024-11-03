@@ -7,6 +7,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 import DB.DBConnection;
+import Data.HashingData;
 
 import java.sql.*;
 
@@ -30,7 +31,7 @@ public class LoginServlet extends HttpServlet {
                          "WHERE email = ? AND password = ?";
             preparedStatement = connect.prepareStatement(sql);
             preparedStatement.setString(1, username);
-            preparedStatement.setString(2, password);
+            preparedStatement.setString(2, HashingData.hash(password));
 
             resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {

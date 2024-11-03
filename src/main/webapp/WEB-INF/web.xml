@@ -17,6 +17,15 @@
     <url-pattern>/crm/*</url-pattern>
   </filter-mapping>
 
+    <filter>
+      <filter-name>AdministratorAccess</filter-name>
+      <filter-class>Filters.AdministratorAccess</filter-class>
+    </filter>
+    <filter-mapping>
+      <filter-name>AdministratorAccess</filter-name>
+      <url-pattern>/admin/*</url-pattern>
+    </filter-mapping>
+
   <filter>
     <filter-name>AccessToAuthorization</filter-name>
     <filter-class>Filters.AccessToAuthorizationFilter</filter-class>

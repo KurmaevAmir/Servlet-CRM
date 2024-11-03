@@ -1,0 +1,9 @@
+.header {
+    background-color: #F5F6FA;
+    font-family: "Ubuntu Condensed", sans-serif;
+    text-shadow: 2px 2px 1px #E0E4E8;
+}
+
+.header a {
+    color: #3478F6;
+}

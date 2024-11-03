@@ -1,0 +1,45 @@
+body {
+    background-color: #F5F6FA;
+    font-family: "Ubuntu Condensed", sans-serif;
+    text-shadow: 2px 2px 1px #E0E4E8;
+    color: #333333;
+}
+
+h1 {
+    margin-top: 15px;
+    text-shadow: 3px 3px 1px #E0E4E8;
+}
+
+.form-login button {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.form-login button {
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 12px;
+    border-radius: 2px;
+    color: #333333;
+    background-color: #F5F6FA;
+}
+
+.form-login button:hover {
+    background-color: #4CAF50;
+    color: #F5F6FA;
+    font-size: 13px;
+}
+
+.login-card p {
+    color: #253237;
+}
+
+.login-page {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30%;
+    text-align: center;
+    border: 3px solid #E0E4E8;
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
